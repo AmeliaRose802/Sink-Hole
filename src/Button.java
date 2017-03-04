@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-/**
+/****************************************************
  * Creates a button with an image as the icon. 
  * Creates shape behind image with same size and quardnates that handles clicks.
  * Use .contains on .getIconCover to resteger clicks.
