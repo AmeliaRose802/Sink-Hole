@@ -19,7 +19,7 @@ public class Coin{
 	
 	private BufferedImage Icon;
 	
-	/**********************************************
+	/***********************************************
 	 * This creates a new obsticle with random stats.
 	 * It requires a string representing difficulty. 
 	 */
