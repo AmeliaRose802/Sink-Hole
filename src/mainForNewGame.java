@@ -42,8 +42,8 @@ public class mainForNewGame {
 				game.addObsticle(a);
 			}
 			
-			//make coins according to difficulty level
-			if(time%p.getMakeCoinFreq() == 0){
+			//make coins according to difficulty level keeps coins less than five
+			if((time%p.getMakeCoinFreq() == 0)&&game.getNumOfCoins()<=5){
 				Coin c = new Coin(p.getDiff());
 				game.addCoin(c);
 			}
