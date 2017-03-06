@@ -85,7 +85,7 @@ public class newGame extends JPanel implements MouseListener{
 		setBackground(p.getBackColor());
 	}
 	
-	public void getNumOfCoins(){
+	public int getNumOfCoins(){
 		return coins.size();
 	}
 	
