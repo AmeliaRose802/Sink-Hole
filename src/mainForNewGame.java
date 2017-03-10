@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.KeyListener;
+import java.io.IOException;
 import java.util.Scanner;
 
 import javax.swing.JButton;
@@ -53,6 +54,11 @@ public class mainForNewGame {
 			if(!game.moveBall()){
 				gameOver = true;
 				game.repaint();
+				try {
+					sendScore.sendScore(p.getName(), p.getScore(), p.getCoins());
+				} catch (IOException e) {
+					System.out.println("Score was not sucessfully sent");
+				}
 			}
 			
 			//move the player

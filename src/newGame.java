@@ -208,7 +208,7 @@ public class newGame extends JPanel implements MouseListener{
 		g2d.setColor(p.getColor());
 		g2d.fillRect(p.getX(), p.getY(), p.getWidth(), p.getLength());
 		
-		;
+		
 		
 		
 		
